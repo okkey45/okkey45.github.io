@@ -1,0 +1,22 @@
+@charset "UTF-8";
+* {
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+a {
+	text-decoration: none;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}

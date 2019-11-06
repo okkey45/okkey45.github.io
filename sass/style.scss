@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import './base/reset';
+@import './base/variables';
+@import 'base/mixins';
+@import 'base/helpers';
+@import 'base/typography';
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+a {
+	cursor: pointer;
+	@include animate(all, 320ms);	
+}
+.btn {
+	display: inline-block;
+	width: 170px;
+	height: 53px;
+	background-color: $btn-color;
+	border-bottom: 3px solid darken($btn-color, 20%);
+	border-radius: 4px;
+	font-family: $title-font;
+	font-size: 14px;
+	font-weight: 800;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 53px;
+	color: #fff;
+	box-sizing: border-box;
+	@include animate(all, 320ms);
+	&:hover {
+		background-color: $btn-hover-color;
+	}
+	&:active {
+		background-color: $btn-active-color;
+	}
+}
+.btn-filter {
+	display: inline-block;
+	width: auto;
+	height: 32px;
+	margin: 0 10px 10px;
+	padding: 0 18px;
+	border: 1.0px solid $brd-color;
+	border-radius: 3px;
+	background-color: transparent;
+	color: $body-txt-color;
+	font-family: $body-font;
+	font-size: 1rem;
+	line-height: 32px;
+	box-sizing: border-box;
+	cursor: pointer;
+	-webkit-transition: background-color 320ms, color 320ms, border 320ms;
+	transition: background-color 320ms, color 320ms, border 320ms;
+	&.active {
+		color: #fff;
+		border: 1.0px solid $btn-color;
+		background-color: $btn-color;
+		cursor: no-drop;
+	}
+}
+.btn-filter:not(.active) {
+	&:hover {
+		color: #fff;
+		border: 1.0px solid $btn-hover-color;
+		background-color: $btn-hover-color;
+	}
+	&:active {
+		color: #fff;
+		border: 1.0px solid $btn-active-color;
+		background-color: $btn-active-color;
+	}
+}
+.btn-load-more {
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+	border: none;
+    border-bottom: 3px solid darken($btn-color, 20%);
+}
+.overlay {
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $bg-dark-color;
+	    opacity: 0;
+	    @include animate(opacity, 320ms);
+	}
+	&:hover {
+		&:after {
+	    	opacity: .8;
+		}
+	}
+}
+
+@import './header';
+@import 'base/form-search';
+@import './base/page-front';
+@import './footer';
+
+@import 'base/media';

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import './base/fonts';
+
+$body-font : 'Montserrat', 'Arial', 'Verdana', sans-serif; /* 200, 300, 400*/
+$title-font : 'Raleway', 'Arial', 'Verdana', sans-serif; /* 400, 500, 600, 700, 800*/
+
+$pr-color : #c7b299;
+$sec-color : #00bff3;
+$bg-color : #fbfaf8;
+$bg-dark-color : #362f2d;
+$title-txt-color : #555555;
+$body-txt-color : #8c8c8c;
+$btn-color : #998675;
+$btn-hover-color : darken($btn-color, 20%);
+$btn-active-color : lighten($btn-color, 20%);
+$brd-color : #ebebeb;

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.text-center {
+	text-align: center;
+}
+.section-vert-padding {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.sr-only {
+	display: none;
+}
